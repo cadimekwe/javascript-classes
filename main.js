@@ -55,7 +55,7 @@ console.log(`my email address is ${email}`);
 
 //include- string method to check if a value exist in a text
 const country = 'united kingdom';
-// const doesItExist = country.includes('united');
+const doesItExist = country.includes('united');
 // Replace- replaces a text in a string
 const replaceText = country.replace('kingdom', 'states');
 console.log(replaceText);
@@ -87,4 +87,81 @@ const lastName2 = 'adimekwe';
 console.log(`my sisters name is ${firstName2} ${lastName2}`);
 console.log(`Welcome ${firstName2} ${lastName2} How can i help you?`);
 
-// 
+// BOOLEAN
+let surname2 = 'adimekwe';
+let age2 = '27';
+let amIYoung = true; 
+
+// if, else and else if statements- used to compare
+if (age <= 9) {
+    console.log('I am 10 years old');
+} else {
+    console.log('I am not 10 years old');
+}
+// === equals
+// > greaterThan
+// < lessThan
+// >= greater or equals to
+// <= less than or equals to
+// || OR
+// && AND
+// && = 2 or more statements have to be true
+// || = if one is true then the condition is met
+// != not equal
+// !== not equal value or not equal type
+
+let age3 = 27;
+if (age3 <= 10) {
+    console.log('i am less than 27 years old');
+} else if (age3 === 27){
+    console.log('i am 27 years old');
+} else {
+    console.log('i am greater than 27');
+}
+
+if (age3 > 0 && age <= 10) {
+    console.log('i am a child');
+} else if (age3 > 10 && age <= 15) {
+    console.log('i am a minor');
+} else if (age3  > 30 || age <= 26) {
+    console.log('i am an adult');
+} else {
+    console.log('i am almost 30');
+}
+
+// switch statements- used to check for something
+switch (age3) {
+    case 27:
+        console.log('i am almost 30');
+        break;
+    case 20:
+        console.log('i am less than 30');
+        break;
+    case 25:
+        console.log('i am exactly 25');
+        break;
+// default means if none of the conditions are met do this
+    default:  
+    console.log('i am a grandma');
+        break;
+}
+
+// control flow exercise 1
+const password = 'raymond redddington';
+if (password.length < 7) {
+    console.log('true');
+} else {
+    console.log('false');
+}
+
+// control flow exercise 2
+let superDooperLooperRollerCoaster = 140;
+if (typeof superDooperLooperRollerCoaster !== 'number') {
+    console.log('please enter a number');
+} else if (superDooperLooperRollerCoaster >= 150) {
+    console.log('you can go on a ride');
+} else {
+    console.log('sorry you are not tall enough');
+}
+
+// If statement project: Dize Prize
